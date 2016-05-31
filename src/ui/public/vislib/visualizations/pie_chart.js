@@ -19,6 +19,7 @@ export default function PieChartFactory(Private) {
    */
   _.class(PieChart).inherits(Chart);
   function PieChart(handler, chartEl, chartData) {
+    console.log('PIE CHART CODE');
     if (!(this instanceof PieChart)) {
       return new PieChart(handler, chartEl, chartData);
     }
@@ -37,6 +38,8 @@ export default function PieChartFactory(Private) {
    * If so, an error is thrown.
    */
   PieChart.prototype._validatePieData = function (charts) {
+        console.log('PIE CHART CODE DATA');
+
     let isAllZeros = charts.every(function (chart) {
       return chart.slices.children.length === 0;
     });
@@ -53,6 +56,7 @@ export default function PieChartFactory(Private) {
    */
   PieChart.prototype.addPathEvents = function (element) {
     let events = this.events;
+    console.log('PIE CHART CODE EVENTS');
 
     return element
       .call(events.addHoverEvent())
