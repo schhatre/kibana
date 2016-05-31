@@ -1,5 +1,5 @@
 define(function () {
-  'use strict';
+//  'use strict';
 
   function detectCURLinLine(line) {
     // returns true if text matches a curl request

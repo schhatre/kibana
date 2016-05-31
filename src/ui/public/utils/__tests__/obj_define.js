@@ -90,7 +90,7 @@ describe('ObjDefine Utility', function () {
       let obj = def.create();
 
       expect(function () {
-        'use strict'; // eslint-disable-line strict
+//        'use strict'; // eslint-disable-line strict
 
         obj.name = notval;
       }).to.throwException();
